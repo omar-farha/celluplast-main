@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bio-Plastic</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"  
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+      body {
+  background: var(--grey);
+  overflow-x: hidden;
+}
+    </style>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <a href="#" class="brand">
+        <i class="bx bxs-smile"></i>
+        <span class="text">Celluplast</span>
+      </a>
+      <div class="profile-info" id="#profile-in">
+        <img src="Images\profile.png" alt="" />
+        <h1>Omar Farha</h1>
+        <p>Farm Manager</p>
+      </div>
+      <ul class="side-menu top">
+        <li class="active">
+          <a href="#">
+            <i class="bx bxs-dashboard"></i>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-shopping-bag-alt"></i>
+            <span class="text">My Store</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-doughnut-chart"></i>
+            <span class="text">Analytics</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-message-dots"></i>
+            <span class="text">Message</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-group"></i>
+            <span class="text">Team</span>
+          </a>
+        </li>
+      </ul>
+ 
+
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- CONTENT -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav>
+        <i class="bx bx-menu"></i>
+        <a href="#" class="nav-link">Categories</a>
+        <form action="#">
+          <div class="form-input">
+            <input type="search" placeholder="Search..." />
+            <button type="submit" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </form>
+        <input type="checkbox" id="switch-mode" hidden />
+        <label for="switch-mode" class="switch-mode"></label>
+        <a href="#" class="notification">
+          <i class="bx bxs-bell"></i>
+          <span class="num">8</span>
+        </a>
+        <a href="#" class="profile">
+          <img src="Images\profile.png" />
+        </a>
+      </nav>
+      <!-- NAVBAR -->
+
+      <!-- MAIN -->
+      <main>
+        <div class="head-title">
+          <div class="left">
+            <h1>Dashboard</h1>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Dashboard</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i></li>
+              <li>
+                <a class="active" href="#">Home</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn-download">
+            <i class="bx bxs-cloud-download"></i>
+            <span class="text">Download PDF</span>
+          </a>
+        </div>
+
+        <ul class="box-info">
+          <li>
+            <i class="fa-brands fa-pagelines"></i>
+            <span class="text">
+              <p>Crop name</p>
+              <h3>Rice</h3>
+            </span>
+          </li>
+          <li>
+            <i class="fa-solid fa-vector-square"></i>
+            <span class="text">
+              <p>Area</p>
+              <h3>23 Acre</h3>
+            </span>
+          </li>
+          <li>
+            <i class="fa-solid fa-sack-xmark"></i>
+            <span class="text">
+              <p>Last production</p>
+              <h3>250 Kg</h3>
+            </span>
+          </li>
+        </ul>
+
+        <div class="table-data">
+          <div class="todo">
+            <div class="box">
+              <p>Air temperature</p>
+              <div class="group">
+                <span>38 C</span>
+                <span class="red">High</span>
+              </div>
+            </div>
+            <div class="box">
+              <p>Water content</p>
+              <div class="group">
+                <span>31%</span>
+                <span class="green">Good</span>
+              </div>
+            </div>
+            <div class="box">
+              <p>pH value</p>
+              <div class="group">
+                <span>7</span>
+                <span class="yellow">base</span>
+              </div>
+            </div>
+          </div>
+          <div class="order">
+          
+        </div>
+      </main>
+      <!-- MAIN -->
+    </section>
+    <!-- CONTENT -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

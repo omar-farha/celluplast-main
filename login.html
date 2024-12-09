@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bio-Plastic</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"  
+    />
+  </head>
+  <body>
+      
+    <!-- login  -->
+    <div class="login" id="loginn">
+        <div class="image">
+          <div class="content">
+            <h2>Welcome back!</h2>
+            <p>
+              To access your account, simply enter your username and password
+              below. If you're a returning user, logging in will give you full
+              access to your personalized features, saved preferences, and order
+              history. New to our platform? You can sign up in just a few easy
+              steps. If you've forgotten your password, click on the "Forgot
+              Password" link to reset it. For any issues with logging in, feel
+              free to reach out to our support team for assistance.
+            </p>
+          </div>
+        </div>
+        <div class="form">
+          <div class="register-container" id="register">
+            <div class="top">
+                <span>Have an account? <button onclick="login()">Login</button></span>
+                <div class="head">Sign Up</div>
+            </div>
+            <div class="two-forms">
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Firstname">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Lastname">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="two-forms">
+              <div class="input-box"> 
+                <input type="password" class="input-field" placeholder="Password">
+                <i class="fa-solid fa-lock"></i>
+              </div>  
+              <div class="input-box">
+                <input type="text" class="input-field" placeholder="Phone">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            </div>
+            <div class="two-forms">
+              <div class="input-box"> 
+                <input type="text" class="input-field" placeholder="Governorate">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>  
+              <div class="input-box">
+                <select name="User type" id="">
+                  <option value="">User type :</option>
+                  <option value="Farmer">Farmer</option>
+                  <option value="producer">producer</option>
+                  <option value="Client">Client</option>
+                </select>
+                <i class="fa-solid fa-user-tie"></i>
+            </div>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Conferm">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="register-check">
+                    <label for="register-check"> Remember Me</label>
+                </div>  
+                <div class="two">
+                    <label><a href="#">Terms & conditions</a></label>
+                </div>
+            </div>
+        </div>
+        <div class="login-container" id="login">
+          <div class="top">
+              <span>Don't have an account? <button onclick="register()">Sign Up</button></span>
+              <div class="head">Login</div>
+          </div>
+          <div class="input-box">
+              <input type="text" class="input-field" placeholder="Username or Email">
+              <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="input-box">
+              <input type="password" class="input-field" placeholder="Password">
+              <i class="fa-solid fa-lock"></i>
+  
+          </div>
+          <div class="input-box">
+              <input type="submit" class="submit" value="Sign In">
+          </div>
+          <div class="two-col">
+              <div class="one">
+                  <input type="checkbox" id="login-check">
+                  <label for="login-check"> Remember Me</label>
+              </div>
+              <div class="two">
+                  <label><a href="#">Forgot password?</a></label>
+              </div>
+          </div>
+      </div>
+    </div>
+   <script>
+       var a = document.getElementById("loginBtn");
+       var b = document.getElementById("registerBtn");
+       var x = document.getElementById("login");
+       var y = document.getElementById("register");
+       function login() {
+           x.style.right = "90px";
+           x.style.opacity = 1;
+           y.style.opacity = 0;
+       }
+       function register() {
+           x.style.right = "-520px";
+           x.style.opacity = 0;
+           y.style.opacity = 1;
+       }
+   </script>
+   
+  </body>
